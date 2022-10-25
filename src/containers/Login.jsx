@@ -1,8 +1,11 @@
 import Button from "react-bootstrap/Button";
+// import Image from 'react-bootstrap/Image';
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import codelawn from "../../src/containers/codelawn.jpg";
+// import pic1 from "../../src/containers/pic1.jpg";
 
 function LoginPage() {
   return (
@@ -24,7 +27,7 @@ function LoginPage() {
                 google
               </a>
             </span>
-            <hr class="mt-4" />
+            <hr className="mt-4" />
             <Form className="p-4">
               <Form.Group className="mb-3" controlId="formBasi Email">
                 <Form.Control type="email" placeholder="Enter email" />
@@ -47,10 +50,11 @@ function LoginPage() {
         </Col>
         <Col>
           <div>
-            <img src="codelawn.jpg" alt="codelawn" />
+            <img src={codelawn} width="100%" height="100%" alt="Codelawn" />
+            {/* <img src={pic1.jpg} className = ""  alt="pic1 " /> */}
           </div>
         </Col>
-      </Row>
+      </Row> 
     </Container>
   );
 }
