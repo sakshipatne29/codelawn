@@ -1,49 +1,106 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { FcGoogle } from "react-icons/fc";
+import Register from "./Register";
 
 function LoginPage() {
   return (
     <div className="bg p-5 ">
-      <div className ="bgt p-5 ">
-      <div className="row">
-        <div className="col">
-          <div className="container text-center p-3 border rounded-5 bg-white mt-4">
-            <ul className="nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Login</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Sign Up</a>
-              </li>
-            </ul>
-            <span className="border border-3 border-info rounded-5 p-2">
-              <a className="" href="www.google.com">google</a>
-            </span>
-            <hr className="mt-4" />
-            <Form className="p-4">
-              <Form.Group className="mb-2" controlId="formBasi Email">
-                <Form.Control type="email" placeholder="Enter email" />
-                <Form.Text className="text-black"  style={{fontSize: '10px', textAlign:'right'}} > We'll never share your email with anyone else.
-                </Form.Text>
-              </Form.Group>
+      <div className="bgt p-5 ">
+        <div className="row">
+          <div className="col">
+            <div className="container text-center p-3 border rounded-5 bg-white mt-4">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    Login
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Signup
+                  </button>
+                </li>
+                
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <a className="" href="www.google.com">
+                    <FcGoogle size="50px" />{" "}
+                  </a>
+                  <hr className="mt-4" />
+                  <Form className="p-4">
+                    <Form.Group className="mb-2" controlId="formBasi Email">
+                      <Form.Control type="email" placeholder="Enter email" />
+                      <Form.Text
+                        className="text-black"
+                        style={{ fontSize: "10px", textAlign: "right" }}
+                      >
+                        We'll never share your email with anyone else.
+                      </Form.Text>
+                    </Form.Group>
 
-              <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Control type="password" placeholder="Password" />
-              </Form.Group>
-              <Button className="ms-1 p-2 w-25" variant="primary" type="submit">Login
-              </Button>
-              <Button className="ms-5 p-2" variant="primary" type="submit">Forget Password
-              </Button>
-            </Form>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                      <Form.Control type="password" placeholder="Password" />
+                    </Form.Group>
+                    <Button
+                      className="ms-1 p-2 w-25"
+                      variant="primary"
+                      type="submit"
+                    >
+                      Login
+                    </Button>
+                    <Button
+                      className="ms-5 p-2"
+                      variant="primary"
+                      type="submit"
+                    >
+                      Forget Password
+                    </Button>
+                  </Form>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <Register />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="container text-center mt-5 ">
+              <h1 className="h1-txt">CodeLawn</h1>
+              <h1 className="h2-txt ">Develop. Build. Deploy.</h1>
+              <p>Here </p>
+            </div>
           </div>
         </div>
-        <div className="col">
-          <div className="container text-center mt-5 ">
-            <h1 className="h1-txt" >CodeLawn</h1>
-            <h1 className="h2-txt ">Create. Build. Deploy.</h1>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   );
