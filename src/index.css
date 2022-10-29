@@ -14,7 +14,7 @@ code {
 }
 .bg {
   
-  background-image: url("E:\MyProj\my-app\src\Assets\codelawn.jpg");
+  background-image: url("Assets/codelawn.jpg");
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
