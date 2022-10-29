@@ -5,8 +5,8 @@ function LoginPage() {
   return (
     <div className="bg p-5 ">
       <div className ="bgt p-5 ">
-      <div class="row">
-        <div class="col">
+      <div className="row">
+        <div className="col">
           <div className="container text-center p-3 border rounded-5 bg-white mt-4">
             <ul className="nav">
               <li className="nav-item">
@@ -37,7 +37,7 @@ function LoginPage() {
             </Form>
           </div>
         </div>
-        <div class="col">
+        <div className="col">
           <div className="container text-center mt-5 ">
             <h1 className="h1-txt" >CodeLawn</h1>
             <h1 className="h2-txt ">Create. Build. Deploy.</h1>

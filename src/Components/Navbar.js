@@ -8,7 +8,7 @@ function Navbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <a className="nav-link" href="#">Apps</a>
