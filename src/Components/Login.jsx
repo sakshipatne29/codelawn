@@ -23,7 +23,7 @@ function LoginPage() {
             <Form className="p-4">
               <Form.Group className="mb-2" controlId="formBasi Email">
                 <Form.Control type="email" placeholder="Enter email" />
-                <Form.Text className="text-black"> We'll never share your email with anyone else.
+                <Form.Text className="text-black"  style={{fontSize: '10px', textAlign:'right'}} > We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
 
