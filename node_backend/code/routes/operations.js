@@ -15,7 +15,8 @@ router.get("/list", (req, res) => {
     // console.log(`process.env.AWS_ACCESS_ID ${process.env.AWS_ACCESS_KEY_ID}`);
     // console.log(`process.env.AWS_SECRET_ID ${process.env.AWS_SECRET_ACCESS_KEY}`);
     try {
-        console.log(`Serving request ${req}`)
+        console.log(`Serving request`)
+        console.log(req)
         const docClient =  new AWS.DynamoDB.DocumentClient();
         const params = {
             TableName: "app_details"
