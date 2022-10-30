@@ -53,18 +53,11 @@ function LoginPage() {
                   </a>
                   <hr className="mt-3" />
                   <Form className="p-4">
-                    <Form.Group className="mb-2" controlId="formBasi Email">
+                    <Form.Group className="mb-4" controlId="formBasi Email">
                       <Form.Control type="email" placeholder="Enter email" />
-                      {/* <Form.Text
-                        className="text-black"
-                        style={{ fontSize: "10px", textAlign: "right" }}
-                      >
-                        We'll never share your email with anyone else.
-                      </Form.Text> */}
-                      <p class="text-start fw-light">We'll never share your email with anyone else.</p>
                     </Form.Group>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Group className="mb-5" controlId="formBasicPassword">
                       <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
                     <Button
