@@ -1,23 +1,16 @@
+import { useState } from "react";
 import DeployIcon from "./AppIcons/DeployIcon";
 
 function ActionIcons(props) {
-    function handleOnLoad (event) {
-      console.log(event);
-        // return (
-        //   <DeployIcon />
-        // )
-    }
-    // 
-    // var icondiv = document.getElementById("icon");
-    // if (icondiv !== null) {
-    //     document.getElementById("icon").innerHTML = "<DeployIcon />"
-    // }
-    // console.log(document.getElementById("icon"));
+
+  const [myIcon, setMyIcon] = useState("");
+  if(myIcon.length === 0) {
+    setMyIcon(<DeployIcon />)
+  }
   return (
-    <>
-    <div id="icon" onLoad={handleOnLoad}>
-    </div>
-    </>
+    <span >
+      {myIcon}
+    </span>
   );
 }
 

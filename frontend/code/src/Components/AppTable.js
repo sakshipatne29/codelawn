@@ -12,8 +12,8 @@ function AppTable() {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.status)
-                console.log(data.message)
+                // console.log(data.status)
+                // console.log(data.message)
                 setAppRecords(data.message)
             })
 
