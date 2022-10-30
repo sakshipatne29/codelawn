@@ -10,7 +10,7 @@ function LoginPage() {
         <div className="row">
           <div className="col">
             <div className="container text-center p-3 border rounded-5 bg-white mt-4">
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <ul class="nav nav-tabs " id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button
                     class="nav-link active"
@@ -48,19 +48,20 @@ function LoginPage() {
                   role="tabpanel"
                   aria-labelledby="home-tab"
                 >
-                  <a className="" href="www.google.com">
-                    <FcGoogle size="50px" />{" "}
+                  <a  href="www.google.com">
+                    <FcGoogle className="mt-3" size="50px" />{" "}
                   </a>
-                  <hr className="mt-4" />
+                  <hr className="mt-3" />
                   <Form className="p-4">
                     <Form.Group className="mb-2" controlId="formBasi Email">
                       <Form.Control type="email" placeholder="Enter email" />
-                      <Form.Text
+                      {/* <Form.Text
                         className="text-black"
                         style={{ fontSize: "10px", textAlign: "right" }}
                       >
                         We'll never share your email with anyone else.
-                      </Form.Text>
+                      </Form.Text> */}
+                      <p class="text-start fw-light">We'll never share your email with anyone else.</p>
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">

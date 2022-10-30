@@ -2,7 +2,9 @@ import React from "react";
 
 function Register() {
   return (
-    <form className="row g-3">
+    <div className="p-5">
+    <form className="shadow row g-3 p-3">
+      <h1 className="text-center">Sign Up</h1>
       <div className="col-md-6">
         <label for="inputAddress" className="form-label"></label>
         <input
@@ -50,6 +52,7 @@ function Register() {
         </button>
       </div>
     </form>
+    </div>
   );
 }
 

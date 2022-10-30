@@ -29,11 +29,6 @@ code {
   flex-direction: column;  
 }
 
-.bgc {
-  background:rgba(10, 73, 221, 0.725);
-  display: flex;
-  flex-direction: column;  
-}
 
 .h1-txt {
   font-family:'Domine', serif;
