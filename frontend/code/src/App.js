@@ -8,8 +8,7 @@ function App() {
   
   return (
     <>
-    <LoginPage />
-    <Register />
+    {/* <LoginPage /> */}
     <Home />
     </>
   );

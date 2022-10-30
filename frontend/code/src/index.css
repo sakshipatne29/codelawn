@@ -12,6 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-custom-transparent {  /* Not in use */
+  --bs-bg-opacity: .5;
+  width: 100vw;
+  height: 100vh;
+}
+
 .bg {
   
   background-image: url("Assets/codelawn.jpg");
