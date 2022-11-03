@@ -1,4 +1,5 @@
 import ActionIcons from "./ActionIcons";
+import CreateAppModal from './CreateAppModal'
 
 function AppRecords(props) {
     
@@ -6,9 +7,10 @@ function AppRecords(props) {
     <>
       <div className="shadow bg-white rounded w-100 p-3">
         <div className="pb-3 text-end">
-          <button type="button" className="btn btn-primary">
+          <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Create App
           </button>
+          <CreateAppModal/>
         </div>
         <div className="table-responsive">
           <table className="table table-hover">
