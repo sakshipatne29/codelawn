@@ -8,7 +8,7 @@ function ActionIcons(props) {
 
   const [myIcon, setMyIcon] = useState("");
  if(myIcon.length === 0) {
-    console.log(props.iconName);
+    // console.log(props.iconName);
     if(props.iconName === "deploy") {
       setMyIcon(<DeployIcon />)
     }
